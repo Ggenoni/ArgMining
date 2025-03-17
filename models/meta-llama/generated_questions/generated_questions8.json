@@ -1,0 +1,57 @@
+{
+    "id": 8,
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "config": {
+        "max_new_tokens": 80,
+        "do_sample": false,
+        "num_beams": 3,
+        "length_penalty": 1.1,
+        "early_stopping": true,
+        "repetition_penalty": 1.2,
+        "no_repeat_ngram_size": 2,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+    },
+    "message": [
+        {
+            "role": "system",
+            "content": "You are an AI trained to critically analyze argumentative texts by identifying hidden assumptions and evaluating logical inferences."
+        },
+        {
+            "role": "user",
+            "content": "Suggest 3 critical questions that should be raised before accepting the arguments in this text:Zewstain: \"It seemed like that was most of her argument. Being a woman\nHow will you differ from Obama? Hillary: As a woman it's clear. Cooper: Any policy differences? Hillary: Hello, I'm a woman\".\nGive one question per line. Make the questions simple, and do not give any explanation regarding why the question is relevant. Do not add any comment before the three questions. Do not add a blank line between the questions."
+        }
+    ],
+    "generated_critical_questions": {
+        "CLINTON_1_1": [
+            "What is the definition of \"everyone\" in the context of building an economic system that \"works for\" them?",
+            "How will the proposed investments in jobs and industries lead to \"rising incomes\" for all individuals, rather than just a select few?",
+            "What specific measures will be taken to ensure that companies that engage in \"profit-sharing\" actually distribute the profits fairly among their employees?"
+        ],
+        "Javier_84": [
+            "What is the basis for Javier's assumption that flyers will always wait at home if they receive notice of a delay, rather than adjusting their travel plans accordingly?",
+            "",
+            "Are there any instances where airlines have been unfairly blamed for delays that were outside of their control, despite providing adequate notice?",
+            "",
+            "Does Javier consider the potential consequences of not providing notice to flyers, such as increased frustration and anger when delays are not anticipated?"
+        ],
+        "TRUMP_125_1": [
+            "What does Trump mean by \"law and-order\" and how does he intend to achieve it?",
+            "Is Trump's claim that African-Americans and Hispanics in American cities live in \"hell\" supported by evidence?",
+            "What is the significance of Trump mentioning his own investments and endorsements in his argument?"
+        ],
+        "travellots_133_1": [
+            "Is the analogy between airline tickets and coffee cups a valid one?",
+            "",
+            "Does the author's assumption about the purpose of purchasing an airline ticket accurately reflect the motivations of all passengers?",
+            "",
+            "Should the responsibility for ensuring that passengers reach their destination on time lie solely with the airlines, or is it a shared responsibility between airlines and passengers?"
+        ],
+        "Zewstain__641": [
+            "What is the significance of Hillary's gender in relation to her policy proposals?",
+            "Is Hillary implying that her gender automatically disqualifies or qualifies her for the presidency?",
+            "How does her response to Cooper's question address the actual issue of differing policies?"
+        ]
+    }
+}
