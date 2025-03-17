@@ -1,0 +1,50 @@
+{
+    "id": 2,
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "config": {
+        "max_new_tokens": 80,
+        "do_sample": true,
+        "temperature": 0.2,
+        "top_p": 0.85,
+        "top_k": 30,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 2
+    },
+    "message": [
+        {
+            "role": "system",
+            "content": "You are an AI trained to critically analyze argumentative texts by identifying hidden assumptions and evaluating logical inferences."
+        },
+        {
+            "role": "user",
+            "content": "Given the following argument, generate exactly 3 critical questions that should be raised before accepting its reasoning.\n\n          **Argument:**\n          Zewstain: \"It seemed like that was most of her argument. Being a woman\nHow will you differ from Obama? Hillary: As a woman it's clear. Cooper: Any policy differences? Hillary: Hello, I'm a woman\"\n\n          **Guidelines:**\n          - Each question should challenge an assumption or inference in the argument.\n          - Provide exactly 3 questions.\n          - Each question should be on a separate line.\n          - Keep the questions concise.\n          - Do not provide any explanation.\n          - Do not add any comment before nor after the 3 questions."
+        }
+    ],
+    "generated_critical_questions": {
+        "CLINTON_1_1": [
+            "What kind evidence does Clinton have that building an \"economy that work for all\" would lead to a better future?",
+            "Is it reasonable to assume that investing in specific industries like infrastructure, advancedmanufacturing, and clean energy would create more jobs than other sectors?",
+            "Does Clinton's proposal for profit sharing necessarily address income inequality, or could it simply benefit shareholders?"
+        ],
+        "Javier_84": [
+            "Is the airline's inability to predict exact timing of weather holds or maintenance issues a sufficient reason to deny passengers timely notification?",
+            "Are flyers who choose to wait at home instead of heading to airport actually exercising their \"rights\", or are they simply taking advantage of the situation?",
+            "Does the fact that flyers might occasionally experience unexpected benefits (e.g., earlier departure) justify denying them the right to timely information about flight"
+        ],
+        "TRUMP_125_1": [
+            "Is the lack of \"law andorder\" solely responsible for the problems in inner-city communities?",
+            "Does Trump's personal investment in a particular city influence his perception of its safety?",
+            "Can the high crime rate in Chicago be attributed solely to the presidency of BarackObama?"
+        ],
+        "travellots_133_1": [
+            "Is the analogy between buying a coffee and purchasing an airline ticket accurate?",
+            "Does the concept of \"promise\" implied in selling a plane ticket accurately capture the nature of the transaction?",
+            "Can the responsibility for ensuring the ticket price is reasonable be solely placed on the airlines, rather than also considering factors like market demand?"
+        ],
+        "Zewstain__641": [
+            "What makes being a women relevant to policy decisions?",
+            "Is being different from a man necessarily a positive characteristic for a president?",
+            "Does being able to articulate one's gender automatically imply policy expertise?"
+        ]
+    }
+}
