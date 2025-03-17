@@ -1,0 +1,50 @@
+{
+    "id": 6,
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "config": {
+        "max_new_tokens": 80,
+        "do_sample": true,
+        "temperature": 0.2,
+        "top_p": 0.85,
+        "top_k": 30,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 2
+    },
+    "message": [
+        {
+            "role": "system",
+            "content": "You are an AI trained to critically analyze argumentative texts by identifying hidden assumptions and evaluating logical inferences."
+        },
+        {
+            "role": "user",
+            "content": "A useful critical question can challenge or clarify a claim by asking for evidence or explanation; examine consequences of the argument; explore alternatives to the proposed idea; check generalizability beyond the given case; uncover assumptions that may be implicit. This is an intervention:\n**Intervention:**\nZewstain: \"It seemed like that was most of her argument. Being a woman\nHow will you differ from Obama? Hillary: As a woman it's clear. Cooper: Any policy differences? Hillary: Hello, I'm a woman\"\nGenerate exactly three **useful** critical questions based on this intervention.\n\n**Guidelines:**\n- Provide exactly 3 questions.\n- Each question should be on a separate line.\n- Keep the questions concise.\n- Do not provide any explanation.\n- Do not add any comment before nor after the 3 questions."
+        }
+    ],
+    "generated_critical_questions": {
+        "CLINTON_1_1": [
+            "What specific data or research supports the claim that investing in certain industries (infrastructure, advancedmanufacturing, innovation, etc.) will lead to \"new jobs, goodjobs, withrising incomes\"?"
+        ],
+        "Javier_84": [
+            "What evidence do you have that flyers would consistently take advantage of advance notice to avoid traveling to airports or gates unnecessarily? ",
+            "",
+            "How would you propose that airlines balance the need for transparency about delays with their own operational challenges and uncertainties?"
+        ],
+        "TRUMP_125_1": [
+            "How do Trump's claims about the safety of inner-city communities align with the actual crime rates and statistics?",
+            "",
+            "What specific policies or actions does Trump propose to address the issue of violence in these communities, aside from his rhetoric about \"law andorder\"?",
+            "",
+            "Does Trump acknowledge the systemic issues contributing to poverty and violence, such as lack of economic opportunities, inadequate education, or racial discrimination, which may not be solely"
+        ],
+        "travellots_133_1": [
+            "What is the basis for assuming that the value of a seat is solely determined by its original price rather than market forces?",
+            "How would you address the potential consequences for airlines' pricing strategies if they were required to honor all sold tickets regardless of demand?",
+            "Do passengers who use frequent flyers miles still have the same expectation of being transported from A-B, even though they didn't pay cash for their ticket?"
+        ],
+        "Zewstain__641": [
+            "What specific policies does being a women bring to your approach?",
+            "Can you elaborate on how being different from a man would lead to better decision-making?",
+            "Wouldn't emphasizing gender over policy details undermine your credibility as a candidate?"
+        ]
+    }
+}
