@@ -1,0 +1,42 @@
+{
+    "id": 3,
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "config": {
+        "max_new_tokens": 80,
+        "do_sample": true,
+        "temperature": 0.2,
+        "top_p": 0.85,
+        "top_k": 30,
+        "repetition_penalty": 1.1,
+        "no_repeat_ngram_size": 2
+    },
+    "message": [
+        {
+            "role": "system",
+            "content": "You are an AI that generates critical questions to evaluate arguments."
+        },
+        {
+            "role": "user",
+            "content": "Generate three useful critical questions based on the following intervention. A useful critical question is one that challenges assumptions, demands justification, explores consequences, or considers alternative perspectives.\n**Intervention:**\nCLINTON: \"The central question in this election is really what kind of country we want to be and what kind of future we 'll build together\nToday is my granddaughter 's second birthday\nI think about this a lot\nwe have to build an economy that works for everyone , not just those at the top\nwe need new jobs , good jobs , with rising incomes\nI want us to invest in you\nI want us to invest in your future\njobs in infrastructure , in advanced manufacturing , innovation and technology , clean , renewable energy , and small business\nmost of the new jobs will come from small business\nWe also have to make the economy fairer\nThat starts with raising the national minimum wage and also guarantee , finally , equal pay for women 's work\nI also want to see more companies do profit-sharing\"\n**Guidelines:**\n- Provide exactly 3 questions.\n- Each question should be on a separate line.\n- Keep the questions concise.\n- Do not provide any explanation.\n- Do not add any comment before nor after the 3 questions.\n- Each question should challenge an assumption or inference in the argument, assessing claims, exploring alternatives, or testing feasibility."
+        }
+    ],
+    "generated_critical_questions": {
+        "CLINTON_1_1": [
+            "What makes you assume that building an \"economy that work[s] for everyon[e]\" requires investing in specific sectors like infrastructure, advancedmanufacturing, and clean energy?"
+        ],
+        "Javier_84": [
+            "What makes you assume that building an \"economy that work[s] for everyon[e]\" requires government investment rather than individual initiative?",
+            "How do you plan to ensure that \"new jobs\" created through infrastructure development, advancedmanufacturing, and other initiatives actually benefit low-income communities and marginalized groups?",
+            "Can you justify why increasing the minimum national wage would necessarily lead to a more \"fair\" economy, given"
+        ],
+        "TRUMP_125_1": [
+            "What specific data or evidence supports the claim that building an \"economy that work for everyon\" requires investing in certain sectors like infrastructure, advanced manufacuturing, and clean energy?"
+        ],
+        "travellots_133_1": [
+            "What makes you assume that building an \"economy that work[s] for everyon[e]\" requires investing in specific sectors like infrastructure, advancedmanufacturing, and clean energy?"
+        ],
+        "Zewstain__641": [
+            "What evidence is there that building an \"economy that work for everyon\" necessarily requires investing in specific sectors like infrastructure, advanced manufacuturing, and clean energy?"
+        ]
+    }
+}
