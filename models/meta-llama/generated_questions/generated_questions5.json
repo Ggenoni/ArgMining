@@ -1,0 +1,49 @@
+{
+    "id": 5,
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "config": {
+        "max_new_tokens": 80,
+        "do_sample": false,
+        "num_beams": 3,
+        "length_penalty": 1.1,
+        "early_stopping": true,
+        "repetition_penalty": 1.2,
+        "no_repeat_ngram_size": 2,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+    },
+    "message": [
+        {
+            "role": "system",
+            "content": "You are an AI trained to critically analyze argumentative texts by identifying hidden assumptions and evaluating logical inferences."
+        },
+        {
+            "role": "user",
+            "content": "A useful critical question can challenge or clarify a claim by asking for evidence or explanation; examine consequences of the argument; explore alternatives to the proposed idea; check generalizability beyond the given case; uncover assumptions that may be implicit. This is an intervention:\n**Intervention:**\nZewstain: \"It seemed like that was most of her argument. Being a woman\nHow will you differ from Obama? Hillary: As a woman it's clear. Cooper: Any policy differences? Hillary: Hello, I'm a woman\"\nGenerate exactly three **useful** critical questions based on this intervention.\n\n**Guidelines:**\n- Provide exactly 3 questions.\n- Each question should be on a separate line.\n- Keep the questions concise.\n- Do not provide any explanation.\n- Do not add any comment before nor after the 3 questions."
+        }
+    ],
+    "generated_critical_questions": {
+        "CLINTON_1_1": [
+            "What evidence do you have that the current economy is not working for most people, rather than just a select few?",
+            "",
+            "How would you define \"good jobs\" and ensure that they are accessible to a diverse range of individuals?",
+            "",
+            "What is the plan for addressing the potential negative consequences, such as increased costs and potential job losses, associated with implementing a national living wage?"
+        ],
+        "Javier_84": [
+            "What evidence do you have that flyers would consistently delay their trips and then blame the airline for not meeting the expected departure time?"
+        ],
+        "TRUMP_125_1": [
+            "What evidence do you have that Secretary Clinton opposes the concept of \"Law and Order\"?",
+            "How does the fact that some police groups have endorsed your campaign support your claim that the country is in a state of chaos?",
+            "What specific policies or actions would you propose to address the high crime rates in cities like Charlotte and Chicago?"
+        ],
+        "travellots_133_1": [
+            "What is the basis for assuming that an airline's inability to provide a promised service is solely due to financial constraints, rather than other factors such as overbooking or weather-related issues?"
+        ],
+        "Zewstain__641": [
+            "What evidence does Hillary have to support the claim that her gender will lead to different policy decisions than Obama's?"
+        ]
+    }
+}
