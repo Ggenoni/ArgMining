@@ -1,0 +1,51 @@
+{
+    "id": 1,
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "config": {
+        "max_new_tokens": 80,
+        "do_sample": false,
+        "num_beams": 3,
+        "length_penalty": 1.1,
+        "early_stopping": true,
+        "repetition_penalty": 1.2,
+        "no_repeat_ngram_size": 2,
+        "temperature": null,
+        "top_p": null,
+        "top_k": null
+    },
+    "message": [
+        {
+            "role": "system",
+            "content": "You are an AI trained to critically analyze argumentative texts by identifying hidden assumptions and evaluating logical inferences."
+        },
+        {
+            "role": "user",
+            "content": "Given the following argument, generate exactly 3 critical questions that should be raised before accepting its reasoning.\n\n          **Argument:**\n          Zewstain: \"It seemed like that was most of her argument. Being a woman\nHow will you differ from Obama? Hillary: As a woman it's clear. Cooper: Any policy differences? Hillary: Hello, I'm a woman\"\n\n          **Guidelines:**\n          - Each question should challenge an assumption or inference in the argument.\n          - Provide exactly 3 questions.\n          - Each question should be on a separate line.\n          - Keep the questions concise.\n          - Do not provide any explanation.\n          - Do not add any comment before nor after the 3 questions."
+        }
+    ],
+    "generated_critical_questions": {
+        "CLINTON_1_1": [
+            "What is the basis for assuming that investing in small businesses will lead to the creation of \"new jobs\" and \"rising incomes\"?"
+        ],
+        "Javier_84": [
+            "Is the assumption that flyers will always delay their trip if given notice of a potential delay accurate?",
+            "Is it reasonable to assume that airlines cannot provide more accurate information about the timing of weather holds or maintenance issues?",
+            "Do flyers have a legitimate right to be informed about potential delays, regardless of whether they choose to adjust their travel plans?"
+        ],
+        "TRUMP_125_1": [
+            "What is the definition of \"hell\" that Trump is using to describe the living conditions of African-Americans and Hispanics?",
+            "Is there a direct causal link between the presence of police groups' endorsements and Trump's ability to reduce crime and violence?",
+            "Does the fact that Chicago has a high crime rate under Obama's presidency necessarily imply that his policies were ineffective in addressing the issue?"
+        ],
+        "travellots_133_1": [
+            "Is the analogy between airline tickets and coffee cups accurate?",
+            "Does the concept of \"promise\" implied in ticket purchase accurately capture the nature of airline services?",
+            "Is it fair to assume that passengers always intend to use their tickets as intended, rather than potentially using them for other purposes?"
+        ],
+        "Zewstain__641": [
+            "What does it mean to \"seem like\" an argument is mostly focused on gender?",
+            "Is Hillary's response a sufficient answer to the question of policy difference?",
+            "Does Cooper's question imply that Hillary is only qualified to discuss policy as a man?"
+        ]
+    }
+}
